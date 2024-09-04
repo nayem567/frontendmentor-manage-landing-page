@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <!-- ! 23th June, 2024 -->
+  <script type="module" crossorigin src="https://github.com/nayem567/frontendmentor-challenges/assets/index-CmLbMHhw.js"></script>
+  <link rel="stylesheet" crossorigin href="https://github.com/nayem567/frontendmentor-challenges/assets/index-Du5Wysf9.css">
+</head>
+
+<body>
+
+  <!-- ! Navbar -->
+
+  <nav class="relative container mx-auto p-6 ">
+    <div class="flex items-center justify-between">
+      <div class="pt-2">
+        <img src="https://github.com/nayem567/frontendmentor-challenges/assets/logo-BE3TwBi3.svg" alt="logo">
+      </div>
+
+      <!-- menu item -->
+      <div class="hidden md:flex space-x-6 ">
+        <a href="#" class="hover:text-red-500">Pricing</a>
+        <a href="#" class="hover:text-red-500">Product</a>
+        <a href="#" class="hover:text-red-500">About Us</a>
+        <a href="#" class="hover:text-red-500">Careers</a>
+        <a href="#" class="hover:text-red-500">Community</a>
+      </div>
+
+      <!-- button -->
+      <a href="#"
+        class=" hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+        Get Started
+      </a>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="open block hamburger md:hidden focus:outline-none">
+        <span class="span hamburger-top"></span>
+        <span class="span hamburger-middle"></span>
+        <span class="span hamburger-bottom"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class=" absolute hidden  flex-col items-center self-end text-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="#">Pricing</a>
+        <a href="#">Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- ! Hero Section -->
+
+  <section id="hero">
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:mb-20">
+
+      <!-- left Item -->
+      <div class="flex flex-col mb-10 space-y-12 md:w-1/2">
+        <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+          Bring Everyone together to build better products
+        </h1>
+        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          Manage makes jt simple for software teams to plan
+          day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <!-- button -->
+        <div class="flex justify-center md:justify-start">
+          <a href="#" class=" p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+            Get Started
+          </a>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="md:w-1/2">
+        <img src="https://github.com/nayem567/frontendmentor-challenges/assets/illustration-intro-CLlASlIv.svg" alt="illustration-intro">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features Section  -->
+
+  <section id="features">
+    <div class="container flex flex-col px-4 mx-auto space-y-12 md:space-y-0 md:flex-row">
+
+      <!-- whats different -->
+      <div class="flex flex-col space-y-12 md:w-1/2">
+        <h2 class="max-w-md text-4xl font-bold text-center">
+          What's different about Manage ?
+        </h2>
+        <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          Manage provides all the functionality your
+          team needs, without the complexity. Our
+          software is tailor-made for modern digital
+          product teams.
+        </p>
+      </div>
+
+      <!-- numbered list -->
+      <div class="flex flex-col space-y-8 md:w-1/2">
+
+        <!-- list item 1 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+          <!-- heading -->
+          <div class="rounded-l-full  md:bg-transparent bg-brightRedSupLight">
+            <div class="flex items-center space-x-2">
+              <div class="px-6 py-3 text-white rounded-full md:py-1 bg-brightRed">
+                01
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden bg-brightRedSupLight p-3">
+                Track company-wide progress
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block ">
+              Track company-wide progress
+            </h3>
+            <p class="text-darkGrayishBlue">
+              see now your day-to-day tasks Til into the wider vision. ou
+              trom tracking progress at the milestone level all the way done !
+              to the smallest or details. Never lose Sight or the digger
+              picture again
+            </p>
+          </div>
+
+
+
+        </div>
+
+        <!-- list item 2 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+          <!-- heading -->
+          <div class="rounded-l-full  md:bg-transparent bg-brightRedSupLight">
+            <div class="flex items-center space-x-2">
+              <div class="px-6 py-3 text-white rounded-full md:py-1 bg-brightRed">
+                02
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden bg-brightRedSupLight p-3">
+                Advanced built-in reports
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block ">
+              Advanced built-in reports
+            </h3>
+            <p class="text-darkGrayishBlue">
+              set internal delivery esumates and tack progress towaro
+              company goals. Our customisable dashboard helps you build
+              out the reports you need to keco key stakeholders informed.
+            </p>
+          </div>
+
+
+
+        </div>
+
+        <!-- list item 3 -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+
+          <!-- heading -->
+          <div class="rounded-l-full  md:bg-transparent bg-brightRedSupLight">
+            <div class="flex items-center space-x-2">
+              <div class="px-6 py-3 text-white rounded-full md:py-1 bg-brightRed">
+                03
+              </div>
+              <h3 class="text-base font-bold md:mb-4 md:hidden bg-brightRedSupLight p-3">
+                Everything you need in one place
+              </h3>
+            </div>
+          </div>
+          <div>
+            <h3 class="hidden mb-4 text-lg font-bold md:block ">
+              Everything you need in one place
+            </h3>
+            <p class="text-darkGrayishBlue">
+              stop jumcing Trom one service to anouter to communicate
+              store files, track tasks and share documents. Manage offers
+              an al-in-one team productvity solution.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+
+  <section id="testimonial">
+
+    <!-- container to heading and testimonial blocks -->
+
+    <div class="max-w-6xl px-5 mx-auto mt-16 text-center">
+      <!-- heading -->
+      <h2 class="text-4xl font-bold text-center">
+        What's different About Manage ?
+      </h2>
+
+      <!-- Testimonial Container -->
+      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+
+        <!-- testimonial 1 -->
+
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 mb-10">
+          <img src="https://github.com/nayem567/frontendmentor-challenges/assets/avatar-richard-DHDXuR9s.png" class="w-16 -mt-14" alt="testimonial 1">
+          <h5 class="text-lg font-bold ">
+            Lee
+          </h5>
+          <p class="text-sm text-darkGrayishBlue">
+            "Manage has supercharged our team's workflow. The ability to keeps everyone motivated." maintain visibility
+            on larger milestones at all times
+          </p>
+        </div>
+
+
+        <!-- testimonial 2 -->
+
+        <div class=" flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 mb-10">
+          <img src="https://github.com/nayem567/frontendmentor-challenges/assets/avatar-richard-DHDXuR9s.png" class="w-16 -mt-14" alt="testimonial 1">
+          <h5 class="text-lg font-bold ">
+            Ali Bravo
+          </h5>
+          <p class="text-sm text-darkGrayishBlue">
+            "We have been able to cancel so many other subscriptions.
+            since using Manage. There is no more cross-channel|
+            confusion and everyone is much more focused."
+          </p>
+        </div>
+
+        <!-- testimonial 3 -->
+
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 ">
+          <img src="https://github.com/nayem567/frontendmentor-challenges/assets/avatar-richard-DHDXuR9s.png" class="w-16 -mt-14" alt="testimonial 1">
+          <h5 class="text-lg font-bold ">
+            Richard Watts
+          </h5>
+          <p class="text-sm text-darkGrayishBlue">
+            "Manage allows us to provido structure and
+            keeps us organize and focused. I con't stop recommending them to everyone I talk to!"
+          </p>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div>
+        <a href="#" class=" p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+
+  <section id="cta" class="bg-brightRed mt-24 py-6">
+    <!-- Flex Container -->
+
+    <div
+      class="container flex flex-col items-center justify-between  md:px-6 md:py-24 mx-auto space-y-12  md:flex-row md:space-y-0">
+      <h2 class="text-3xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left ">
+        Simplify how your team works today
+      </h2>
+
+      <!-- button -->
+      <div>
+        <a href="#"
+          class=" p-3 px-6 pt-2 text-brightRed bg-white rounded-full baseline shadow-2xl  hover:bg-gray-900 hover:text-white">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer class="bg-veryDarkBlue py-6">
+
+    <!-- Flex Container -->
+
+    <div class="container flex flex-col-reverse justify-between md:px-6 md:py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo , SOcial Icon -->
+
+      <div
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <!-- Logo -->
+
+        <div class="mx-auto my-6 text-center text-white md:hidden">
+          Copyright : Mohaymenul Islam - 2024
+        </div>
+
+        <div>
+          <img src="https://github.com/nayem567/frontendmentor-challenges/assets/logo-white-Oq1m15Yf.svg" class="h-8" alt="logo">
+        </div>
+
+        <!-- social Links container -->
+
+        <div class="flex justify-center space-x-4 ">
+
+          <a href="#">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23FFF'%20d='M18.896%200H1.104C.494%200%200%20.494%200%201.104v17.793C0%2019.506.494%2020%201.104%2020h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583%201.578-3.99%203.883-3.99%201.104%200%202.052.082%202.329.119v2.7h-1.598c-1.254%200-1.496.597-1.496%201.47v1.928h2.989l-.39%203.018h-2.6V20h5.098c.608%200%201.102-.494%201.102-1.104V1.104C20%20.494%2019.506%200%2018.896%200z'/%3e%3c/svg%3e" alt="fb" class="h-8">
+          </a>
+
+          <a href="#">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='21'%20height='20'%3e%3cpath%20fill='%23FFF'%20d='M10.333%200c-5.522%200-10%204.478-10%2010%200%205.523%204.478%2010%2010%2010%205.523%200%2010-4.477%2010-10%200-5.522-4.477-10-10-10zm3.701%2014.077c-1.752.12-5.653.12-7.402%200C4.735%2013.947%204.514%2013.018%204.5%2010c.014-3.024.237-3.947%202.132-4.077%201.749-.12%205.651-.12%207.402%200%201.898.13%202.118%201.059%202.133%204.077-.015%203.024-.238%203.947-2.133%204.077zM8.667%208.048l4.097%201.949-4.097%201.955V8.048z'/%3e%3c/svg%3e" alt="fb" class="h-8">
+          </a>
+
+          <a href="#">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='21'%20height='18'%3e%3cpath%20fill='%23FFF'%20d='M20.667%202.797a8.192%208.192%200%2001-2.357.646%204.11%204.11%200%20001.804-2.27%208.22%208.22%200%2001-2.606.996A4.096%204.096%200%200014.513.873c-2.649%200-4.595%202.472-3.997%205.038a11.648%2011.648%200%2001-8.457-4.287%204.109%204.109%200%20001.27%205.478A4.086%204.086%200%20011.47%206.59c-.045%201.901%201.317%203.68%203.29%204.075a4.113%204.113%200%2001-1.853.07%204.106%204.106%200%20003.834%202.85%208.25%208.25%200%2001-6.075%201.7%2011.616%2011.616%200%20006.29%201.843c7.618%200%2011.922-6.434%2011.662-12.205a8.354%208.354%200%20002.048-2.124z'/%3e%3c/svg%3e" alt="fb" class="h-8">
+          </a>
+
+          <a href="#">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='20'%3e%3cpath%20fill='%23FFF'%20d='M10%200C4.478%200%200%204.477%200%2010c0%204.237%202.636%207.855%206.356%209.312-.088-.791-.167-2.005.035-2.868.182-.78%201.172-4.97%201.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428%201.81-2.428.852%200%201.264.64%201.264%201.408%200%20.858-.545%202.14-.828%203.33-.236.995.5%201.807%201.48%201.807%201.778%200%203.144-1.874%203.144-4.58%200-2.393-1.72-4.068-4.177-4.068-2.845%200-4.515%202.135-4.515%204.34%200%20.859.331%201.781.745%202.281a.3.3%200%2001.069.288l-.278%201.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874%200-3.154%202.292-6.052%206.608-6.052%203.469%200%206.165%202.473%206.165%205.776%200%203.447-2.173%206.22-5.19%206.22-1.013%200-1.965-.525-2.291-1.148l-.623%202.378c-.226.869-.835%201.958-1.244%202.621.937.29%201.931.446%202.962.446%205.522%200%2010-4.477%2010-10S15.522%200%2010%200z'/%3e%3c/svg%3e" alt="fb" class="h-8">
+          </a>
+
+          <a href="#">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='21'%20height='20'%3e%3cpath%20fill='%23FFF'%20d='M10.333%201.802c2.67%200%202.987.01%204.042.059%202.71.123%203.976%201.409%204.1%204.099.048%201.054.057%201.37.057%204.04%200%202.672-.01%202.988-.058%204.042-.124%202.687-1.386%203.975-4.099%204.099-1.055.048-1.37.058-4.042.058-2.67%200-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041%200-2.67.01-2.986.058-4.04.124-2.69%201.387-3.977%204.1-4.1%201.054-.048%201.37-.058%204.04-.058zm0-1.802C7.618%200%207.278.012%206.211.06%202.579.227.56%202.242.394%205.877.345%206.944.334%207.284.334%2010s.011%203.057.06%204.123c.166%203.632%202.181%205.65%205.816%205.817%201.068.048%201.408.06%204.123.06%202.716%200%203.057-.012%204.124-.06%203.628-.167%205.651-2.182%205.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11%202.249%2018.093.228%2014.458.06%2013.39.01%2013.049%200%2010.333%200zm0%204.865a5.135%205.135%200%20100%2010.27%205.135%205.135%200%20000-10.27zm0%208.468a3.333%203.333%200%20110-6.666%203.333%203.333%200%20010%206.666zm5.339-9.87a1.2%201.2%200%2010-.001%202.4%201.2%201.2%200%20000-2.4z'/%3e%3c/svg%3e" alt="fb" class="h-8">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- footer menu 1 -->
+      <div class="flex justify-around space-x-32 ">
+        <div class=" hidden md:flex flex-col space-y-3 text-white">
+          <a href="#" class="hover:text-brightRed">Home </a>
+          <a href="#" class="hover:text-brightRed">Pricing </a>
+          <a href="#" class="hover:text-brightRed">Products </a>
+          <a href="#" class="hover:text-brightRed">About </a>
+        </div>
+      </div>
+
+      <!-- footer menu 2 -->
+      <div class=" flex justify-around space-x-32 text-center">
+        <div class="flex flex-col space-y-3 text-white">
+          <a href="#" class="hover:text-brightRed">Careers </a>
+          <a href="#" class="hover:text-brightRed">Community </a>
+          <a href="#" class="hover:text-brightRed">Privacy Police</a>
+        </div>
+      </div>
+
+      <!-- input container -->
+
+      <div class="flex flex-col justify-between text-center">
+        <form>
+          <input type="text" class="flex-1 py-2 px-4 rounded-full focus:outline-none"
+            placeholder="Updates in your inbox">
+          <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+            Go
+          </button>
+        </form>
+
+        <!-- copyright -->
+
+        <div class="hidden text-white md:block">
+          Copyright : Mohaymenul Islam - 2024
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
