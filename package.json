@@ -7,7 +7,7 @@
     "dev": "vite",
     "preview": "vite preview",
     "start": "vite",
-    "build": "tailwindcss -i style.css -o ./styles.css"
+    "build": "vite build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
